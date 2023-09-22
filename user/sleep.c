@@ -2,12 +2,11 @@
 #include "user/user.h"
 #include "user/usys.S"
 
-
 int
-main(int argc){
-  int i = atoi(argc);
+main(char *argv[]){
+  int i = atoi(argv[0]);
 
   sleep(i);
 
-exit(0);
+  exit(0);
 }
